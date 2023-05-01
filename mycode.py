@@ -15,8 +15,8 @@ def caesar_cipher(message, shift):
 message = input("Write a message: ")
 shift =int(input("Number of shift: "))
 encoded_message = caesar_cipher(message, shift)
-for i in range(0, len(encoded_message), 5):
-    print(encoded_message[i:i+5], end=" ")
+for i in range(0, len(encoded_message), shift):
+    print(encoded_message[i:i+shift], end=" ")
     if i % 50 == 45:
         print()
 print()
